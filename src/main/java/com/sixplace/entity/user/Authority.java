@@ -1,4 +1,4 @@
-package com.sixplace.user;
+package com.sixplace.entity.user;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

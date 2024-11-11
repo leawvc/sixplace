@@ -1,7 +1,8 @@
-package com.sixplace.dto;
+package com.sixplace.dto.user;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sixplace.user.User;
+import com.sixplace.dto.AuthorityDto;
+import com.sixplace.entity.user.User;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;

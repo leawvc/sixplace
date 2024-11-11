@@ -1,12 +1,12 @@
-package com.sixplace.service;
+package com.sixplace.service.user;
 
 
-import com.sixplace.dto.UserDto;
+import com.sixplace.dto.user.UserDto;
 import com.sixplace.exception.DuplicateMemberException;
 import com.sixplace.exception.NotFoundMemberException;
-import com.sixplace.repository.UserRepository;
-import com.sixplace.user.Authority;
-import com.sixplace.user.User;
+import com.sixplace.repository.user.UserRepository;
+import com.sixplace.entity.user.Authority;
+import com.sixplace.entity.user.User;
 import com.sixplace.util.SecurityUtil;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
