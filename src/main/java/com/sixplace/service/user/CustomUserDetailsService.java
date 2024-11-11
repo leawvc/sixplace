@@ -1,7 +1,7 @@
-package com.sixplace.service;
+package com.sixplace.service.user;
 
-import com.sixplace.user.User;
-import com.sixplace.repository.UserRepository;
+import com.sixplace.entity.user.User;
+import com.sixplace.repository.user.UserRepository;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

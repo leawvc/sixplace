@@ -1,6 +1,6 @@
-package com.sixplace.repository;
+package com.sixplace.repository.user;
 
-import com.sixplace.user.User;
+import com.sixplace.entity.user.User;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 

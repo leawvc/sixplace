@@ -1,4 +1,4 @@
-package com.sixplace.user;
+package com.sixplace.entity.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

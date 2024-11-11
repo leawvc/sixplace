@@ -1,7 +1,7 @@
-package com.sixplace.controller;
+package com.sixplace.controller.user;
 
-import com.sixplace.dto.UserDto;
-import com.sixplace.service.UserService;
+import com.sixplace.dto.user.UserDto;
+import com.sixplace.service.user.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
