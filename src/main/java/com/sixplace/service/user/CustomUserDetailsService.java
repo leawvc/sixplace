@@ -2,6 +2,7 @@ package com.sixplace.service.user;
 
 import com.sixplace.entity.user.User;
 import com.sixplace.repository.user.UserRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -14,12 +15,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Component("userDetailsService")
+@RequiredArgsConstructor
 public class CustomUserDetailsService implements UserDetailsService {
     private final UserRepository userRepository;
-
-    public CustomUserDetailsService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
 
     //login시 DB에서 유저, 권한 정보를 리턴
     @Override

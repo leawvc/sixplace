@@ -61,7 +61,6 @@ public class SecurityConfig {
 
                 .authorizeHttpRequests(authorizeHttpRequests -> authorizeHttpRequests
                         .requestMatchers("/api/hello", "/api/authenticate", "/api/signup").permitAll()
-                        .requestMatchers(PathRequest.toH2Console()).permitAll()
                         .anyRequest().authenticated()
                 )
 
@@ -70,10 +69,6 @@ public class SecurityConfig {
                         sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 )
 
-                // enable h2-console
-                .headers(headers ->
-                        headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::sameOrigin)
-                )
                 //JwtFilter를 addFilterBefore로 등록했던 JwtSecurityConfig 클래스 적용
                 .with(new JwtSecurityConfig(tokenProvider), customizer -> {});
         return http.build();
